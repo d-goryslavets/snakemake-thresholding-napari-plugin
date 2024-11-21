@@ -6,3 +6,10 @@ visibility: public
 categories: ["Annotation", "Segmentation", "Acquisition"]
 contributions:
   commands:
+    - id: myp.run_thres
+      python_name: myp._snakemake_thres:run_thres
+      title: Run Snakemake thresholding workflow
+
+  widgets:
+    - command: myp.run_thres
+      display_name: Snakemake Thresholding
